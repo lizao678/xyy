@@ -1,0 +1,60 @@
+//////////////////////////////
+//        common CSS
+//////////////////////////////
+// .section {
+//     background-color: $white_smoke;
+//     text-align: center;
+//   }
+  
+//   h1 {
+//     margin-bottom: 3rem;
+  
+//     font-size: 2.5rem;
+//     font-weight: bold;
+//     color: $yankees_blue;
+//   }
+
+h3{
+  font-weight: 400;
+  font-size: 2.333333rem;
+  color: #fff;
+}
+
+// Extra screen phone
+$screen-phone: 480px;
+
+// Extra screen tablets
+$screen-tablet: 768px;
+  
+  //IOS: 320/480, 320/568 -> 2, 375/667 -> 2, 414/736 -> 3
+  // 在屏幕宽度小于480px时
+  @media screen and (max-width: $screen-phone) {
+    html {
+      font-size: 16px;
+    }
+    
+    #fp-nav {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: $screen-phone + 1) and (max-width: $screen-tablet - 1) {
+    html {
+      font-size: 20px;
+    }
+  
+    #fp-nav {
+      display: none;
+    }
+  
+    .wechat {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: $screen-tablet) {
+    html {
+      font-size: 24px;
+    }
+  }
+  

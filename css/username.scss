@@ -1,0 +1,22 @@
+.first-view{
+    text-align: center;
+    /* h3{
+        font-weight: 400;
+        font-size: 2.333333rem;
+        color: #fff;
+    } */
+    p{
+        margin-top: 1.666667rem;
+    }
+    .name,.title{
+        font-size: 1.375rem;
+        color: #243F60;
+    }
+    [class^="title"]{
+        font-size: 1rem;
+    }
+    .title-college{
+        color: #fff;
+    }
+}
+
