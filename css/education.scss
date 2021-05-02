@@ -12,7 +12,7 @@
         // top: 50%;
         left: 50%;
         transform: translateX(-50%);
-        max-width: 50%;
+        max-width: 28.958333rem;
         .major-item{
             line-height: 1.5;
             font-size: .95rem;
@@ -29,8 +29,7 @@
         // text-align: left;
         max-width: 80%;
         .course-item {
-            display: inline-block;
-            max-width: 80%;
+            // display: inline-block;
             margin-top: 1.87rem;
             // text-align: left;
             font-size: .85rem;
@@ -53,11 +52,17 @@
 }
 
 @media screen and (max-width: $screen-phone) {
-    .major-item{
-        span{
-            display: block;
-            float: none;
+    .education{
+        .major{
+            max-width: 50%;
+            .major-item{
+                span{
+                    display: block;
+                    float: none;
+                }
+                
+            }
         }
-        
     }
+    
 }

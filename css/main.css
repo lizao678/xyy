@@ -130,7 +130,7 @@ h3 {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 50%; }
+    max-width: 28.958333rem; }
     .education .major .major-item {
       line-height: 1.5;
       font-size: .95rem; }
@@ -142,8 +142,6 @@ h3 {
     display: inline-block;
     max-width: 80%; }
     .education .course .course-item {
-      display: inline-block;
-      max-width: 80%;
       margin-top: 1.87rem;
       font-size: .85rem; }
       .education .course .course-item h5 {
@@ -159,8 +157,10 @@ h3 {
         background-color: #727582; }
 
 @media screen and (max-width: 480px) {
-  .major-item span {
-    display: block;
-    float: none; } }
+  .education .major {
+    max-width: 50%; }
+    .education .major .major-item span {
+      display: block;
+      float: none; } }
 
 /*# sourceMappingURL=main.css.map */
