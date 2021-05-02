@@ -1,4 +1,6 @@
 .third-view{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     text-align: center;
     h3{
         margin-bottom: 2rem;
@@ -7,19 +9,20 @@
     }
     .experiences{
         display: inline-block;
-        border-left: solid #6bbacf 0.25rem;;
+        padding-left: .83rem;
+        border-left: solid #6bbacf 0.25rem;
         .exp{
             position: relative;
-            text-align: left;
             padding: 0 1rem .5rem 1.666667rem;
+            text-align: left;
             h5{
-                font-weight: 400;
+                font-weight: 700;
                 font-size: 1rem;
             }
             .target-border{
                 position: absolute;
                 top: 0;
-                left: -1rem;
+                left: -1.8rem;
                 width: 1.67rem;
                 height: 1.67rem;
                 border-radius: 50%;
@@ -27,7 +30,7 @@
             }
             .description{
                 margin-top: .4rem;
-                line-height: .8rem;
+                line-height: 1.2rem;
                 font-size: .6rem;
                 li{
                     margin-left: .9rem;
@@ -36,5 +39,19 @@
             }
         }
     }
+}
 
+@media screen and (max-width: $screen-phone) {
+    .third-view{
+        .experiences{
+            position: relative;
+            // border-left: none;
+            .exp{
+                padding-left: 0;
+            }
+            .target-border{
+                display: none;
+            }
+        }
+    } 
 }
