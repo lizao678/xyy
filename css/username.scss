@@ -11,13 +11,18 @@
     .name,.title{
         font-weight: 700;
         font-size: 1.375rem;
-        color: #243F60;
+        color: $dark_blue;
     }
     [class^="title"]{
         font-size: 1rem;
     }
     .title-college{
         color: #fff;
+    }
+    .pdf{
+        text-decoration: underline;
+        font-size: .8rem;
+        color: $dark_blue;
     }
 }
 

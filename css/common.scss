@@ -13,6 +13,8 @@
 //     font-weight: bold;
 //     color: $yankees_blue;
 //   }
+
+
 .clearfix:after{
   content: '';
   display: block;
@@ -26,6 +28,9 @@ h3{
   font-size: 2.333333rem;
   color: #fff;
 }
+
+// 常用字体颜色
+$dark_blue: #243F60;
 
 // Extra screen phone
 $screen-phone: 480px;

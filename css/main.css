@@ -70,6 +70,10 @@ h3 {
     font-size: 1rem; }
   .first-view .title-college {
     color: #fff; }
+  .first-view .pdf {
+    text-decoration: underline;
+    font-size: .8rem;
+    color: #243F60; }
 
 .second-view {
   text-align: center;
