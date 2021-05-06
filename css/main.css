@@ -54,6 +54,7 @@ h3 {
   html {
     font-size: 24px; } }
 .first-view {
+  position: relative;
   text-align: center;
   /* h3{
       font-weight: 400;
@@ -74,6 +75,20 @@ h3 {
     text-decoration: underline;
     font-size: .8rem;
     color: #243F60; }
+  .first-view .bg-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    .first-view .bg-bottom .triangle {
+      width: 0;
+      height: 0;
+      border-color: transparent #243F60 transparent transparent;
+      border-style: solid;
+      border-width: 4rem 100vw 0 0; }
+    .first-view .bg-bottom .square {
+      width: 100vw;
+      height: 10rem;
+      background-color: #243F60; }
 
 @font-face {
   font-family: 'icomoon';
