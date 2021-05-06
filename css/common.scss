@@ -50,6 +50,7 @@ $screen-tablet: 768px;
     }
   }
   
+  //屏幕大于481px小于767px时
   @media screen and (min-width: $screen-phone + 1) and (max-width: $screen-tablet - 1) {
     html {
       font-size: 20px;
@@ -64,6 +65,7 @@ $screen-tablet: 768px;
     }
   }
   
+  // 屏幕大于768时
   @media screen and (min-width: $screen-tablet) {
     html {
       font-size: 24px;

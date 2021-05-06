@@ -75,6 +75,36 @@ h3 {
     font-size: .8rem;
     color: #243F60; }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?gy98no");
+  src: url("../fonts/icomoon.eot?gy98no#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?gy98no") format("truetype"), url("../fonts/icomoon.woff?gy98no") format("woff"), url("../fonts/icomoon.svg?gy98no#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: auto;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-phone::before {
+  content: "\e942"; }
+
+.icon-email::before {
+  vertical-align: text-top;
+  content: "\e900"; }
+
+.icon-wechat::before {
+  content: "\e96c"; }
+
 .second-view {
   text-align: center;
   color: #fff; }
@@ -83,6 +113,39 @@ h3 {
   .second-view ul li {
     margin-top: 1.666667rem;
     font-size: 1rem; }
+    .second-view ul li .contact {
+      display: inline-block;
+      position: relative; }
+      @media screen and (max-width: 480px) {
+        .second-view ul li .contact {
+          margin-right: 0.5rem; } }
+      .second-view ul li .contact .icon-wechat {
+        cursor: pointer; }
+        .second-view ul li .contact .icon-wechat .wechat {
+          position: absolute;
+          top: 1.5rem;
+          right: -1.75rem;
+          display: inline-block;
+          width: 4.5rem;
+          height: 4.5rem;
+          background: url("../images/wechat.png") no-repeat;
+          background-size: cover;
+          border: 0.1rem solid #000; }
+          .second-view ul li .contact .icon-wechat .wechat::after, .second-view ul li .contact .icon-wechat .wechat::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0; }
+          .second-view ul li .contact .icon-wechat .wechat:before {
+            top: -1rem;
+            right: 1.75rem;
+            border: 0.5rem transparent solid;
+            border-bottom-color: #000; }
+          .second-view ul li .contact .icon-wechat .wechat::after {
+            top: -0.75rem;
+            right: 1.85rem;
+            border: 0.4rem transparent solid;
+            border-bottom-color: #fff; }
 
 .third-view {
   padding-left: 1.5rem;
