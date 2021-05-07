@@ -143,9 +143,10 @@ h3 {
           display: inline-block;
           width: 4.5rem;
           height: 4.5rem;
-          background: url("../images/wechat.png") no-repeat;
-          background-size: cover;
           border: 0.1rem solid #000; }
+          .second-view ul li .contact .icon-wechat .wechat img {
+            width: 4.5rem;
+            height: 4.5rem; }
           .second-view ul li .contact .icon-wechat .wechat::after, .second-view ul li .contact .icon-wechat .wechat::before {
             position: absolute;
             content: "";

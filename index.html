@@ -17,7 +17,6 @@
 	<link rel="stylesheet" href="css/main.css">
 	<script src="libs/js/jQuery-3.6.min.js"></script>
 	<script src="libs/js/jquery.fullPage.min.js"></script>
-	<script src="js/index.js"></script>
 	<script>
 		$(function () {
 			$('#dowebok').fullpage({
@@ -66,11 +65,14 @@
 				<li>
 					<a href="javascript:;" class="contact">
 						<span class="icon-wechat">
-							<span></span>
+							<span class="wechat">
+								<img src="images/wechat.png" alt="" id="my-image">
+							</span>
 						</span>
 					</a>
 				</li>
 			</ul>
+			
 		</div>
 		<!-- 第二屏 end -->
 		<!-- 第三屏 start -->
@@ -174,6 +176,21 @@
 		</div>
 		<!-- 第四屏 end -->
 	</div>
+	<!-- 实现图片放大缩小 -->
+	<script src="libs/js/zoomerang.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+		Zoomerang.config({
+			transitionDuration: '.1s',
+			maxHeight: 400, // 最大高度400
+			maxWidth: 400,  // 最大宽度400
+			bgColor: '#000', // 背景框颜色
+			bgOpacity: .85, // 背景透明度
+			
+			// deepCopy:true
+		})
+		Zoomerang.listen('.wechat img');
+	</script>
 </body>
 
 </html>
